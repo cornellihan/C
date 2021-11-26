@@ -1,0 +1,16 @@
+#include <stdio.h>
+void change(int *);
+
+int main()
+{
+    int i = 69999;
+    printf("The vlaue of i before the fucntion call is: %d\n", i);
+    change(&i);
+    printf("The vlaue of i after the fucntion call is: %d\n", i);
+    return 0;
+}
+
+void change(int *number)
+{
+    *number = *number * 10;
+}
